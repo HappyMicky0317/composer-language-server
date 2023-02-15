@@ -1,0 +1,38 @@
+{
+  "name": "composer-language-server",
+  "version": "0.1.1",
+  "description": "Language server for composer.json files.",
+  "scripts": {
+    "build": "tsc -b src",
+    "watch": "tsc -b src -w",
+    "test": "jest -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laytan/composer-language-server.git"
+  },
+  "author": "Laytan Laats",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/laytan/composer-language-server/issues"
+  },
+  "homepage": "https://github.com/laytan/composer-language-server#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "jsonc-parser": "^3.0.0",
+    "vscode-languageserver": "^7.0.0",
+    "vscode-languageserver-textdocument": "^1.0.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "@types/json-schema": "^7.0.9",
+    "@types/node": "^16.11.12",
+    "jest": "^27.4.4",
+    "prettier": "^2.5.1",
+    "ts-jest": "^27.1.1",
+    "typescript": "^4.5.3"
+  },
+  "bin": {
+    "composer-language-server": "./dist/index.js"
+  }
+}
